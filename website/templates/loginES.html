@@ -1,5 +1,7 @@
 {% extends "baseLogin.html" %}
+{% block title %}Iniciar Sesión{% endblock %}
 {% block flag %}src="{{ url_for('static', filename='/img/flags/ES.png') }}"{% endblock %}
 {% block language %}Idioma{% endblock %}
 {% block placeholderU %}placeholder="Usuario"{% endblock %}
 {% block placeholderP %}placeholder="Contraseña"{% endblock %}
+{% block submitBtn %}Iniciar sesión{% endblock %}

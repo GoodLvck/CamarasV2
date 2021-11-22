@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %} Change {% endblock %}
+{% block title %}Log in{% endblock %}
 {% block language %}Language{% endblock %}
 
 {% block content %}
@@ -27,7 +27,7 @@
                             </span>
                         </div>
                         <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-danger btn-primary" id="labelP">Log in</button>
+                            <button type="submit" class="btn btn-danger btn-primary" id="labelP">{% block submitBtn %}Log in{% endblock %}</button>
                         </div>
                     </form>
                 </div>
