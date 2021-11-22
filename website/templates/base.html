@@ -29,7 +29,7 @@
                             <img {% block flag %}src="{{ url_for('static', filename='/img/flags/UK.png') }}"{% endblock %} class="mx-1 lang-icon" alt="">
                             {% block language %}Language{% endblock %}
                         </a>
-                        <a class="nav-item nav-link" id="logout" href="/logout"><i class="fas fa-sign-out-alt"></i>Log Out</a>
+                        <a class="nav-item nav-link" id="logout" href="/logout"><i class="fas fa-sign-out-alt"></i>{% block logOut %}Log Out{% endblock %}</a>
                         <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="navbarDarkDropdownMenuLink">
                             <li><a class="dropdown-item" href="/es/login"><img src="{{ url_for('static', filename='/img/flags/ES.png') }}" class="mx-1 lang-icon" alt=""> Español</a></li>
                             <li><a class="dropdown-item" href="/login"><img src="{{ url_for('static', filename='/img/flags/UK.png') }}" class="mx-1 lang-icon" alt=""> English</a></li>
