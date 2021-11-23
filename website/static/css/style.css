@@ -1,5 +1,6 @@
 body{
     background-image: url("../img/Fondo.jpeg");
+    --balloon-color: #dc3545;
 }
 
 #login {
