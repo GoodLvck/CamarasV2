@@ -1,6 +1,6 @@
-{% extends "./bases/baseLogin.html" %}
+{% extends "./bases/baseSignup.html" %}
 
-{% block title %}Iniciar Sesión{% endblock %}
+{% block title %}Crear usuario{% endblock %}
 
 {% block logout %}hidden{% endblock %}
 {% block logOutText %}Cerrar sesión{% endblock %}
@@ -9,4 +9,5 @@
 
 {% block placeholderU %}placeholder="Usuario"{% endblock %}
 {% block placeholderP %}placeholder="Contraseña"{% endblock %}
-{% block submitBtn %}Iniciar sesión{% endblock %}
+{% block placeholderP2 %}placeholder="Confirmar contraseña"{% endblock %}
+{% block submitBtn %}Crear usuario{% endblock %}

@@ -22,12 +22,12 @@
             </button>
             <div class="collapse navbar-collapse" style="justify-content: end;" id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                    <li class="pe-5">
-                        <a class="nav-item nav-link" id="logout" href="/logout"  aria-label="{% block logOut %}Log Out{% endblock %}" data-balloon-pos="down"><i class="fas fa-lg fa-sign-out-alt"></i></a>
+                    <li class="pe-5" {% block logout %}hidden{% endblock %}>
+                        <a class="nav-item nav-link" id="logout" href="/logout"  aria-label="{% block logOutText %}Log Out{% endblock %}" data-balloon-pos="down"><i class="fas fa-lg fa-sign-out-alt"></i></a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle btn btn-outline-danger" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img {% block flag %}src="{{ url_for('static', filename='/img/flags/UK.png') }}"{% endblock %} class="mx-1 lang-icon" alt="">
+                            <img {% block flag %}src="{{ url_for('static', filename='/img/flags/UK.png') }}"{% endblock %} class="mx-1 lang-icon" >
                             {% block language %}Language{% endblock %}
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="navbarDarkDropdownMenuLink">
